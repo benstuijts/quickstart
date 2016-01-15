@@ -1,0 +1,104 @@
+[25-Nov-2015 22:46:26 UTC] PHP Warning:  file_get_contents(/home/ubuntu/workspace/v1.0/mode.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/v1.0/app/start.php on line 20
+[25-Nov-2015 22:46:26 UTC] PHP Stack trace:
+[25-Nov-2015 22:46:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/v1.0/public/index.php:0
+[25-Nov-2015 22:46:26 UTC] PHP   2. require() /home/ubuntu/workspace/v1.0/public/index.php:3
+[25-Nov-2015 22:46:26 UTC] PHP   3. file_get_contents() /home/ubuntu/workspace/v1.0/app/start.php:20
+[25-Nov-2015 22:46:26 UTC] PHP Fatal error:  Uncaught exception 'Noodlehaus\Exception\FileNotFoundException' with message 'Configuration file: [/home/ubuntu/workspace/v1.0/app/config/.php] cannot be found' in /home/ubuntu/workspace/v1.0/vendor/hassankhan/config/src/Config.php:153
+Stack trace:
+#0 /home/ubuntu/workspace/v1.0/vendor/hassankhan/config/src/Config.php(54): Noodlehaus\Config->getValidPath('/home/ubuntu/wo...')
+#1 /home/ubuntu/workspace/v1.0/vendor/hassankhan/config/src/Config.php(42): Noodlehaus\Config->__construct('/home/ubuntu/wo...')
+#2 /home/ubuntu/workspace/v1.0/app/start.php(26): Noodlehaus\Config::load('/home/ubuntu/wo...')
+#3 [internal function]: {closure}()
+#4 /home/ubuntu/workspace/v1.0/vendor/slim/slim/Slim/Slim.php(388): call_user_func(Object(Closure))
+#5 /home/ubuntu/workspace/v1.0/app/start.php(27): Slim\Slim->configureMode(false, Object(Closure))
+#6 /home/ubuntu/workspace/v1.0/public/index.php(3): require('/home/ubuntu/wo...')
+#7 {main}
+  thrown in /home/ubuntu/workspace/v1.0/vendor/hassankhan/config/src/Config.php on line 153
+[26-Nov-2015 16:03:10 UTC] PHP Fatal error:  Class 'Facebook' not found in /home/ubuntu/workspace/v1.0/app/start.php on line 29
+[26-Nov-2015 16:03:10 UTC] PHP Stack trace:
+[26-Nov-2015 16:03:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/v1.0/public/index.php:0
+[26-Nov-2015 16:03:10 UTC] PHP   2. require() /home/ubuntu/workspace/v1.0/public/index.php:3
+[26-Nov-2015 23:35:32 UTC] CSRF state token does not match one provided.
+[26-Nov-2015 23:37:48 UTC] CSRF state token does not match one provided.
+[26-Nov-2015 23:40:33 UTC] CSRF state token does not match one provided.
+[26-Nov-2015 23:40:33 UTC] PHP Fatal error:  Call to undefined method Facebook::getToken() in /home/ubuntu/workspace/v1.0/app/start.php on line 56
+[26-Nov-2015 23:40:33 UTC] PHP Stack trace:
+[26-Nov-2015 23:40:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/v1.0/public/index.php:0
+[26-Nov-2015 23:40:33 UTC] PHP   2. Slim\Slim->run() /home/ubuntu/workspace/v1.0/public/index.php:5
+[26-Nov-2015 23:40:33 UTC] PHP   3. Slim\Middleware\PrettyExceptions->call() /home/ubuntu/workspace/v1.0/vendor/slim/slim/Slim/Slim.php:1302
+[26-Nov-2015 23:40:33 UTC] PHP   4. Slim\Middleware\MethodOverride->call() /home/ubuntu/workspace/v1.0/vendor/slim/slim/Slim/Middleware/PrettyExceptions.php:67
+[26-Nov-2015 23:40:33 UTC] PHP   5. Slim\Middleware\Flash->call() /home/ubuntu/workspace/v1.0/vendor/slim/slim/Slim/Middleware/MethodOverride.php:92
+[26-Nov-2015 23:40:33 UTC] PHP   6. Slim\Slim->call() /home/ubuntu/workspace/v1.0/vendor/slim/slim/Slim/Middleware/Flash.php:85
+[26-Nov-2015 23:40:33 UTC] PHP   7. Slim\Route->dispatch() /home/ubuntu/workspace/v1.0/vendor/slim/slim/Slim/Slim.php:1357
+[26-Nov-2015 23:40:33 UTC] PHP   8. call_user_func_array:{/home/ubuntu/workspace/v1.0/vendor/slim/slim/Slim/Route.php:468}() /home/ubuntu/workspace/v1.0/vendor/slim/slim/Slim/Route.php:468
+[26-Nov-2015 23:40:33 UTC] PHP   9. {closure:/home/ubuntu/workspace/v1.0/app/start.php:51-72}() /home/ubuntu/workspace/v1.0/vendor/slim/slim/Slim/Route.php:468
+[26-Nov-2015 23:43:13 UTC] CSRF state token does not match one provided.
+[26-Nov-2015 23:43:13 UTC] PHP Fatal error:  Call to undefined method Facebook::get() in /home/ubuntu/workspace/v1.0/app/start.php on line 56
+[26-Nov-2015 23:43:13 UTC] PHP Stack trace:
+[26-Nov-2015 23:43:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/v1.0/public/index.php:0
+[26-Nov-2015 23:43:13 UTC] PHP   2. Slim\Slim->run() /home/ubuntu/workspace/v1.0/public/index.php:5
+[26-Nov-2015 23:43:13 UTC] PHP   3. Slim\Middleware\PrettyExceptions->call() /home/ubuntu/workspace/v1.0/vendor/slim/slim/Slim/Slim.php:1302
+[26-Nov-2015 23:43:13 UTC] PHP   4. Slim\Middleware\MethodOverride->call() /home/ubuntu/workspace/v1.0/vendor/slim/slim/Slim/Middleware/PrettyExceptions.php:67
+[26-Nov-2015 23:43:13 UTC] PHP   5. Slim\Middleware\Flash->call() /home/ubuntu/workspace/v1.0/vendor/slim/slim/Slim/Middleware/MethodOverride.php:92
+[26-Nov-2015 23:43:13 UTC] PHP   6. Slim\Slim->call() /home/ubuntu/workspace/v1.0/vendor/slim/slim/Slim/Middleware/Flash.php:85
+[26-Nov-2015 23:43:13 UTC] PHP   7. Slim\Route->dispatch() /home/ubuntu/workspace/v1.0/vendor/slim/slim/Slim/Slim.php:1357
+[26-Nov-2015 23:43:13 UTC] PHP   8. call_user_func_array:{/home/ubuntu/workspace/v1.0/vendor/slim/slim/Slim/Route.php:468}() /home/ubuntu/workspace/v1.0/vendor/slim/slim/Slim/Route.php:468
+[26-Nov-2015 23:43:13 UTC] PHP   9. {closure:/home/ubuntu/workspace/v1.0/app/start.php:51-72}() /home/ubuntu/workspace/v1.0/vendor/slim/slim/Slim/Route.php:468
+[26-Nov-2015 23:43:43 UTC] CSRF state token does not match one provided.
+[26-Nov-2015 23:44:05 UTC] CSRF state token does not match one provided.
+[26-Nov-2015 23:44:28 UTC] CSRF state token does not match one provided.
+[26-Nov-2015 23:44:53 UTC] CSRF state token does not match one provided.
+[26-Nov-2015 23:46:21 UTC] CSRF state token does not match one provided.
+[26-Nov-2015 23:46:21 UTC] PHP Fatal error:  Call to a member function post() on a non-object in /home/ubuntu/workspace/v1.0/app/start.php on line 64
+[26-Nov-2015 23:46:21 UTC] PHP Stack trace:
+[26-Nov-2015 23:46:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/v1.0/public/index.php:0
+[26-Nov-2015 23:46:21 UTC] PHP   2. Slim\Slim->run() /home/ubuntu/workspace/v1.0/public/index.php:5
+[26-Nov-2015 23:46:21 UTC] PHP   3. Slim\Middleware\PrettyExceptions->call() /home/ubuntu/workspace/v1.0/vendor/slim/slim/Slim/Slim.php:1302
+[26-Nov-2015 23:46:21 UTC] PHP   4. Slim\Middleware\MethodOverride->call() /home/ubuntu/workspace/v1.0/vendor/slim/slim/Slim/Middleware/PrettyExceptions.php:67
+[26-Nov-2015 23:46:21 UTC] PHP   5. Slim\Middleware\Flash->call() /home/ubuntu/workspace/v1.0/vendor/slim/slim/Slim/Middleware/MethodOverride.php:92
+[26-Nov-2015 23:46:21 UTC] PHP   6. Slim\Slim->call() /home/ubuntu/workspace/v1.0/vendor/slim/slim/Slim/Middleware/Flash.php:85
+[26-Nov-2015 23:46:21 UTC] PHP   7. Slim\Route->dispatch() /home/ubuntu/workspace/v1.0/vendor/slim/slim/Slim/Slim.php:1357
+[26-Nov-2015 23:46:21 UTC] PHP   8. call_user_func_array:{/home/ubuntu/workspace/v1.0/vendor/slim/slim/Slim/Route.php:468}() /home/ubuntu/workspace/v1.0/vendor/slim/slim/Slim/Route.php:468
+[26-Nov-2015 23:46:21 UTC] PHP   9. {closure:/home/ubuntu/workspace/v1.0/app/start.php:51-80}() /home/ubuntu/workspace/v1.0/vendor/slim/slim/Slim/Route.php:468
+[26-Nov-2015 23:47:13 UTC] CSRF state token does not match one provided.
+[26-Nov-2015 23:48:31 UTC] CSRF state token does not match one provided.
+[27-Nov-2015 11:48:10 UTC] PHP Fatal error:  Class 'BS\Middleware\BeforeMiddleware' not found in /home/ubuntu/workspace/v1.0/app/start.php on line 37
+[27-Nov-2015 11:48:10 UTC] PHP Stack trace:
+[27-Nov-2015 11:48:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/v1.0/public/index.php:0
+[27-Nov-2015 11:48:10 UTC] PHP   2. require() /home/ubuntu/workspace/v1.0/public/index.php:3
+[27-Nov-2015 11:49:04 UTC] PHP Fatal error:  Class 'BS\Middleware\BeforeMiddleware' not found in /home/ubuntu/workspace/v1.0/app/start.php on line 37
+[27-Nov-2015 11:49:04 UTC] PHP Stack trace:
+[27-Nov-2015 11:49:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/v1.0/public/index.php:0
+[27-Nov-2015 11:49:04 UTC] PHP   2. require() /home/ubuntu/workspace/v1.0/public/index.php:3
+[27-Nov-2015 11:49:07 UTC] PHP Fatal error:  Class 'BS\Middleware\BeforeMiddleware' not found in /home/ubuntu/workspace/v1.0/app/start.php on line 37
+[27-Nov-2015 11:49:07 UTC] PHP Stack trace:
+[27-Nov-2015 11:49:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/v1.0/public/index.php:0
+[27-Nov-2015 11:49:07 UTC] PHP   2. require() /home/ubuntu/workspace/v1.0/public/index.php:3
+[27-Nov-2015 11:50:01 UTC] PHP Fatal error:  Class 'BS\Middleware\BeforeMiddleware' not found in /home/ubuntu/workspace/v1.0/app/start.php on line 37
+[27-Nov-2015 11:50:01 UTC] PHP Stack trace:
+[27-Nov-2015 11:50:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/v1.0/public/index.php:0
+[27-Nov-2015 11:50:01 UTC] PHP   2. require() /home/ubuntu/workspace/v1.0/public/index.php:3
+[27-Nov-2015 11:50:57 UTC] PHP Fatal error:  Class 'BS\Middleware\BeforeMiddleware' not found in /home/ubuntu/workspace/v1.0/app/start.php on line 37
+[27-Nov-2015 11:50:57 UTC] PHP Stack trace:
+[27-Nov-2015 11:50:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/v1.0/public/index.php:0
+[27-Nov-2015 11:50:57 UTC] PHP   2. require() /home/ubuntu/workspace/v1.0/public/index.php:3
+[27-Nov-2015 11:52:47 UTC] PHP Fatal error:  Class 'BenStuijts\Middleware\BeforeMiddleware' not found in /home/ubuntu/workspace/v1.0/app/start.php on line 38
+[27-Nov-2015 11:52:47 UTC] PHP Stack trace:
+[27-Nov-2015 11:52:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/v1.0/public/index.php:0
+[27-Nov-2015 11:52:47 UTC] PHP   2. require() /home/ubuntu/workspace/v1.0/public/index.php:3
+[27-Nov-2015 11:53:15 UTC] PHP Fatal error:  Class 'BenStuijts\Middleware\BeforeMiddleware' not found in /home/ubuntu/workspace/v1.0/app/start.php on line 38
+[27-Nov-2015 11:53:15 UTC] PHP Stack trace:
+[27-Nov-2015 11:53:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/v1.0/public/index.php:0
+[27-Nov-2015 11:53:15 UTC] PHP   2. require() /home/ubuntu/workspace/v1.0/public/index.php:3
+[27-Nov-2015 11:53:16 UTC] PHP Fatal error:  Class 'BenStuijts\Middleware\BeforeMiddleware' not found in /home/ubuntu/workspace/v1.0/app/start.php on line 38
+[27-Nov-2015 11:53:16 UTC] PHP Stack trace:
+[27-Nov-2015 11:53:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/v1.0/public/index.php:0
+[27-Nov-2015 11:53:16 UTC] PHP   2. require() /home/ubuntu/workspace/v1.0/public/index.php:3
+[27-Nov-2015 11:53:17 UTC] PHP Fatal error:  Class 'BenStuijts\Middleware\BeforeMiddleware' not found in /home/ubuntu/workspace/v1.0/app/start.php on line 38
+[27-Nov-2015 11:53:17 UTC] PHP Stack trace:
+[27-Nov-2015 11:53:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/v1.0/public/index.php:0
+[27-Nov-2015 11:53:17 UTC] PHP   2. require() /home/ubuntu/workspace/v1.0/public/index.php:3
+[27-Nov-2015 11:53:17 UTC] PHP Fatal error:  Class 'BenStuijts\Middleware\BeforeMiddleware' not found in /home/ubuntu/workspace/v1.0/app/start.php on line 38
+[27-Nov-2015 11:53:17 UTC] PHP Stack trace:
+[27-Nov-2015 11:53:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/v1.0/public/index.php:0
+[27-Nov-2015 11:53:17 UTC] PHP   2. require() /home/ubuntu/workspace/v1.0/public/index.php:3
